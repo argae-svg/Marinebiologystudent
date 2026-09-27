@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marine Biology Research Portal</title>
+<style>
+:root{--navy:#082f49;--blue:#0369a1;--cyan:#0891b2;--ice:#f0f9ff;--ink:#102a43;--muted:#587086;--line:#d9e7ef;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,47,73,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 22px}.brand{font-weight:800;letter-spacing:.3px}.brand small{display:block;font-size:10px;font-weight:500;opacity:.7;letter-spacing:1.6px}
+.links{display:flex;gap:22px}.links a{color:#dff5ff;text-decoration:none;font-size:14px}.links a:hover{color:#67e8f9}
+.hero{background:linear-gradient(135deg,#062b44,#075985 55%,#0891b2);color:#fff;padding:92px 22px 84px}.hero-inner{max-width:1180px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;color:#a5f3fc}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.03;max-width:850px;margin:14px 0}.hero p{max-width:720px;font-size:18px;color:#d9f4ff}.btn{display:inline-block;margin-top:18px;padding:12px 18px;border-radius:8px;background:#fff;color:var(--navy);text-decoration:none;font-weight:800;font-size:14px}
+.wrap{max-width:1180px;margin:auto;padding:70px 22px}.section-head{max-width:750px;margin-bottom:32px}.kicker{color:var(--blue);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}.section-head h2{font-size:34px;margin:7px 0 10px}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff;box-shadow:0 5px 20px rgba(8,47,73,.05)}.card h3{margin-top:0}.card p{color:var(--muted);font-size:14px}
+.stats{background:var(--ice);border-block:1px solid var(--line)}.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stat{padding:20px 0}.stat strong{font-size:34px;color:var(--blue);display:block}.stat span{font-size:13px;color:var(--muted)}
+.method{background:#f8fbfd}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{border-top:3px solid var(--cyan);padding:18px;background:#fff}.step b{font-size:12px;color:var(--blue)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}th,td{text-align:left;padding:14px;border-bottom:1px solid var(--line);font-size:14px}th{background:var(--ice);color:var(--navy)}tr:last-child td{border-bottom:0}
+.callout{background:var(--navy);color:#fff;border-radius:14px;padding:30px}.callout p{color:#d7edf7}.callout a{color:#67e8f9}
+footer{background:#061f31;color:#c9e1ec;padding:35px 22px;font-size:13px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.links{display:none}.grid,.statgrid,.steps{grid-template-columns:1fr 1fr}.hero{padding-top:65px}.wrap{padding-block:52px}}
+@media(max-width:520px){.grid,.statgrid,.steps{grid-template-columns:1fr}.hero h1{font-size:42px}.foot{flex-direction:column}}
+</style>
+<!-- Google Search / SEO metadata -->
+<meta name="description" content="Marine Biology Research Portal by Argae Ramirez, a Marine Biology Student. A student-focused marine conservation knowledge hub featuring published research on marine biodiversity, mangroves, seagrasses, restoration, and conservation.">
+<meta name="keywords" content="marine biology, marine conservation, marine biodiversity, mangrove conservation, seagrass conservation, marine research, student research, ocean science">
+<meta name="author" content="Argae Ramirez">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/marine-biology-research/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Marine Biology Research Portal | Argae Ramirez">
+<meta property="og:description" content="A student-focused marine conservation knowledge hub based on published scientific research.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/marine-biology-research/">
+
+<!-- Basic structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Marine Biology Research Portal",
+  "description": "A student-focused marine conservation knowledge hub based on published scientific research.",
+  "url": "https://YOUR-USERNAME.github.io/marine-biology-research/",
+  "author": {
+    "@type": "Person",
+    "name": "Argae Ramirez",
+    "jobTitle": "Marine Biology Student"
+  }
+}
+</script>
+</head>
+<body>
+<nav><div class="nav"><div class="brand">MARINE BIOLOGY RESEARCH<small>RESEARCH &amp; FIELD SCIENCE PORTAL</small></div>
+<div class="links"><a href="#research">Publications</a><a href="#methods">Methods</a><a href="#findings">Findings</a><a href="#references">References</a><a href="#team">Team</a></div></div></nav>
+
+<header class="hero">
+<div class="hero-inner"><div class="eyebrow">Marine Science • Biodiversity • Conservation</div>
+<h1>Marine Biodiversity Research Portal</h1>
+<p>A student-focused marine conservation knowledge hub that connects learners with published research on biodiversity, mangroves, seagrasses, restoration, and ocean conservation.</p><div style="margin-top:22px;padding:14px 18px;border-left:3px solid #67e8f9;background:rgba(255,255,255,.08);max-width:600px"><strong>Website Owner</strong><br>Argae Ramirez — Marine Biology Student</div>
+<a class="btn" href="#research">Explore the research ↓</a></div>
+</header>
+
+<section class="stats"><div class="wrap statgrid">
+<div class="stat"><strong>03</strong><span>Primary research habitats</span></div>
+<div class="stat"><strong>15+</strong><span>Target organism records</span></div>
+<div class="stat"><strong>04</strong><span>Field methods</span></div>
+<div class="stat"><strong>2026</strong><span>Current research cycle</span></div>
+</div></section>
+
+<section id="research" class="wrap">
+<div class="section-head">
+<div class="kicker">Student research library</div>
+<h2>Published research in marine conservation</h2>
+<p>This website is designed to help marine biology students quickly access published scientific literature. Each entry below identifies the publication, its research focus, and how it can help students understand marine conservation.</p>
+</div>
+
+<div class="grid">
+<article class="card">
+<div class="kicker">Marine biodiversity • 2026</div>
+<h3>Gaps and drivers of global marine animal biodiversity from the surface to abyss</h3>
+<p><strong>Author:</strong> Hanieh Saeedi</p>
+<p><strong>Journal:</strong> Nature Communications, 17, Article 4553 (2026).</p>
+<p><strong>Student focus:</strong> Shows how global biodiversity databases can be used to study marine species richness, sampling gaps, depth, environmental drivers, and human impacts.</p>
+<p><a href="https://www.nature.com/articles/s41467-026-73613-z" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+
+<article class="card">
+<div class="kicker">Mangrove conservation • 2026</div>
+<h3>Tropical marine ecology: resilience, conservation, and management of mangroves</h3>
+<p><strong>Authors:</strong> Jahnelle Howe, William J. Hernández, Francisco Werner, Peter M. Groffman, et al.</p>
+<p><strong>Journal:</strong> Frontiers in Environmental Science, 14 (2026).</p>
+<p><strong>Student focus:</strong> Reviews mangrove resilience, ecological functions, conservation, management, and blue-carbon importance.</p>
+<p><a href="https://doi.org/10.3389/fenvs.2026.1800493" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+
+<article class="card">
+<div class="kicker">Marine spatial planning • 2026</div>
+<h3>Aligning climate-smart marine spatial planning and ecoscape restoration for global biodiversity recovery</h3>
+<p><strong>Authors:</strong> Lisa M. Wedding, Catarina Frazão Santos, Tundi Agardy, Joseph Appiott, Joseph S. Boyle, Elena Gissi, Stephanie J. Green, Ilina Singh, Katrin Wilhelm, et al.</p>
+<p><strong>Journal:</strong> Nature Reviews Biodiversity, 2, 127–137 (2026).</p>
+<p><strong>Student focus:</strong> Explores how spatial planning and ecosystem restoration can be coordinated to support biodiversity recovery under climate change.</p>
+<p><a href="https://www.nature.com/articles/s44358-025-00116-y" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+
+<article class="card">
+<div class="kicker">Global conservation • 2022</div>
+<h3>A global horizon scan of issues impacting marine and coastal biodiversity conservation</h3>
+<p><strong>Authors:</strong> James E. Herbert-Read, Ann Thornton, Diva J. Amon, Silvana N. R. Birchenough, Isabelle M. Côté, Maria P. Dias, Brendan J. Godley, Sally A. Keith, Emma McKinley, et al.</p>
+<p><strong>Journal:</strong> Nature Ecology &amp; Evolution, 6, 1262–1270 (2022).</p>
+<p><strong>Student focus:</strong> Identifies emerging issues affecting marine and coastal biodiversity, including ecosystem impacts, resource exploitation, and new technologies.</p>
+<p><a href="https://doi.org/10.1038/s41559-022-01812-0" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+
+<article class="card">
+<div class="kicker">Southeast Asia • 2022</div>
+<h3>A systematic review of mangrove restoration studies in Southeast Asia</h3>
+<p><strong>Authors:</strong> Maria Elisa B. Gerona-Daga &amp; Severino G. Salmo III</p>
+<p><strong>Journal:</strong> Frontiers in Marine Science, 9 (2022).</p>
+<p><strong>Student focus:</strong> Reviews hundreds of mangrove-restoration studies and identifies challenges, restoration approaches, ecological outcomes, and research needs in Southeast Asia.</p>
+<p><a href="https://doi.org/10.3389/fmars.2022.987737" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+
+<article class="card">
+<div class="kicker">Seagrass conservation • 2025</div>
+<h3>Conserving seagrass ecosystems to meet global biodiversity and climate goals</h3>
+<p><strong>Authors:</strong> Carlos M. Duarte, Eugenia T. Apostolaki, Oscar Serrano, Alexandra Steckbauer, Richard K. F. Unsworth, et al.</p>
+<p><strong>Journal:</strong> Nature Reviews Biodiversity, 1, 150–165 (2025).</p>
+<p><strong>Student focus:</strong> Explains seagrass ecosystem functions, biodiversity, climate-related services, threats, conservation, and restoration opportunities.</p>
+<p><a href="https://www.nature.com/articles/s44358-025-00028-x" target="_blank" rel="noopener">Read the published research ↗</a></p>
+</article>
+</div>
+
+<div class="callout" style="margin-top:28px">
+<h3>How students can use this library</h3>
+<p>Use the publications to build background knowledge, identify research gaps, compare conservation approaches, support literature reviews, and locate original scientific evidence. Always read the original publication before citing a finding in an academic paper.</p>
+</div>
+</section>
+
+<section id="methods" class="method"><div class="wrap"><div class="section-head"><div class="kicker">Methodology</div><h2>Field-to-dataset workflow</h2><p>A transparent workflow makes marine research reproducible and easier to evaluate.</p></div>
+<div class="steps"><div class="step"><b>01 • SITE SELECTION</b><h3>Study areas</h3><p>Select representative coastal sites and record habitat characteristics.</p></div>
+<div class="step"><b>02 • FIELD SAMPLING</b><h3>Observation</h3><p>Conduct standardized transects, quadrats, visual surveys, or specimen documentation.</p></div>
+<div class="step"><b>03 • IDENTIFICATION</b><h3>Taxonomy</h3><p>Identify organisms using appropriate taxonomic references and verification procedures.</p></div>
+<div class="step"><b>04 • ANALYSIS</b><h3>Biodiversity metrics</h3><p>Calculate richness, abundance, diversity indices, and compare sites as appropriate.</p></div></div></div></section>
+
+<section id="findings" class="wrap"><div class="section-head"><div class="kicker">Data records</div><h2>Example species observation table</h2><p>Sample structure only—these values are placeholders and should be replaced by verified observations.</p></div>
+<table><thead><tr><th>Scientific name</th><th>Common group</th><th>Habitat</th><th>Observation status</th></tr></thead>
+<tbody><tr><td><em>Sonneratia alba</em></td><td>Mangrove</td><td>Intertidal</td><td>Recorded</td></tr>
+<tr><td><em>Acropora</em> spp.</td><td>Hard coral</td><td>Reef</td><td>Sample record</td></tr>
+<tr><td><em>Holothuria</em> spp.</td><td>Sea cucumber</td><td>Seagrass / reef flat</td><td>Sample record</td></tr>
+<tr><td><em>Thalassia hemprichii</em></td><td>Seagrass</td><td>Shallow coastal</td><td>Sample record</td></tr></tbody></table></section>
+
+<section id="references" class="wrap">
+<div class="section-head">
+<div class="kicker">References</div>
+<h2>Published sources used by this website</h2>
+<p>The website uses published scientific literature as a starting point for student learning. Links below lead to the original journal or publisher pages.</p>
+</div>
+<div class="card">
+<ol style="padding-left:22px">
+<li><strong>Saeedi, H.</strong> (2026). <em>Gaps and drivers of global marine animal biodiversity from the surface to abyss.</em> Nature Communications, 17, 4553. <a href="https://doi.org/10.1038/s41467-026-73613-z" target="_blank" rel="noopener">https://doi.org/10.1038/s41467-026-73613-z</a></li>
+<li><strong>Howe, J. H., Hernández, W. J., Werner, F., Groffman, P. M., et al.</strong> (2026). <em>Tropical marine ecology: resilience, conservation, and management of mangroves.</em> Frontiers in Environmental Science, 14. <a href="https://doi.org/10.3389/fenvs.2026.1800493" target="_blank" rel="noopener">https://doi.org/10.3389/fenvs.2026.1800493</a></li>
+<li><strong>Wedding, L. M., Frazão Santos, C., Agardy, T., Appiott, J., Boyle, J. S., Gissi, E., Green, S. J., Singh, I., Wilhelm, K., et al.</strong> (2026). <em>Aligning climate-smart marine spatial planning and ecoscape restoration for global biodiversity recovery.</em> Nature Reviews Biodiversity, 2, 127–137. <a href="https://doi.org/10.1038/s44358-025-00116-y" target="_blank" rel="noopener">https://doi.org/10.1038/s44358-025-00116-y</a></li>
+<li><strong>Herbert-Read, J. E., Thornton, A., Amon, D. J., Birchenough, S. N. R., Côté, I. M., Dias, M. P., Godley, B. J., Keith, S. A., McKinley, E., et al.</strong> (2022). <em>A global horizon scan of issues impacting marine and coastal biodiversity conservation.</em> Nature Ecology &amp; Evolution, 6, 1262–1270. <a href="https://doi.org/10.1038/s41559-022-01812-0" target="_blank" rel="noopener">https://doi.org/10.1038/s41559-022-01812-0</a></li>
+<li><strong>Gerona-Daga, M. E. B., &amp; Salmo, S. G. III.</strong> (2022). <em>A systematic review of mangrove restoration studies in Southeast Asia: Challenges and opportunities for the United Nation’s Decade on Ecosystem Restoration.</em> Frontiers in Marine Science, 9. <a href="https://doi.org/10.3389/fmars.2022.987737" target="_blank" rel="noopener">https://doi.org/10.3389/fmars.2022.987737</a></li>
+<li><strong>Duarte, C. M., Apostolaki, E. T., Serrano, O., Steckbauer, A., Unsworth, R. K. F., et al.</strong> (2025). <em>Conserving seagrass ecosystems to meet global biodiversity and climate goals.</em> Nature Reviews Biodiversity, 1, 150–165. <a href="https://doi.org/10.1038/s44358-025-00028-x" target="_blank" rel="noopener">https://doi.org/10.1038/s44358-025-00028-x</a></li>
+</ol>
+<p style="color:var(--muted);font-size:13px"><strong>Academic-use note:</strong> Publication summaries on this site are educational guides, not substitutes for the original articles. Students should consult the full paper and follow their institution’s required citation style.</p>
+</div>
+</section>
+
+<section id="team" class="wrap"><div class="callout"><div class="kicker">Research team</div><h2>Marine Biology Research Group</h2><p><strong>Website Owner &amp; Student Researcher:</strong> Argae Ramirez — Marine Biology Student.</p><p>This educational website is owned and maintained by <strong>Argae Ramirez</strong>, a Marine Biology Student. Its purpose is to make published marine-conservation information easier for students to discover, understand, and use responsibly.</p><p>Student-led field research in marine biodiversity, coastal ecology, and conservation. Add researcher names, affiliations, adviser information, and institutional details here.</p><a href="mailto:research@example.edu">research@example.edu</a></div></section>
+
+<footer><div class="foot"><div><strong>Marine Biology Research Portal</strong><br>Owned by Argae Ramirez • Marine Biology Student<br>Scientific research • Field ecology • Conservation</div><div>Prototype research website • 2026</div></div></footer>
+</body></html>

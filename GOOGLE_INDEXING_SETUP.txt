@@ -1,0 +1,29 @@
+GOOGLE INDEXING SETUP — MARINE BIOLOGY RESEARCH PORTAL
+
+1. Publish the site with GitHub Pages.
+2. Replace YOUR-USERNAME in:
+   - index.html
+   - robots.txt
+   - sitemap.xml
+   with your actual GitHub username.
+3. Push/upload all three files:
+   index.html
+   robots.txt
+   sitemap.xml
+4. Open Google Search Console:
+   https://search.google.com/search-console
+5. Add your GitHub Pages URL as a URL-prefix property.
+6. Verify ownership using one of Google's available verification methods.
+7. Open URL Inspection in Search Console and enter your homepage URL.
+8. If Google can access it, request indexing.
+9. In Search Console, open Sitemaps and submit:
+   sitemap.xml
+10. Keep the website publicly accessible and do not add a noindex tag.
+
+Google may take several days or longer to crawl and index a newly published site.
+Indexing is not guaranteed immediately, and appearing in Search is separate from
+simply having a public website.
+
+Google guidance:
+https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+https://developers.google.com/search/docs/monitor-debug/search-console-start
